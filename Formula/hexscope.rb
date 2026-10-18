@@ -3,7 +3,6 @@
 class Hexscope < Formula
   desc "See what a file gives away before you send it, and save a clean copy"
   homepage "https://hexscope.org"
-  version "0.7.0"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
