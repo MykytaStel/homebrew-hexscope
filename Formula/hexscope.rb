@@ -1,5 +1,5 @@
 # Written by scripts/homebrew-formula.mjs in MykytaStel/hexscope from the
-# checksums release v0.7.0 carries. Edit that script, not this file.
+# checksums release v0.7.1 carries. Edit that script, not this file.
 class Hexscope < Formula
   desc "See what a file gives away before you send it, and save a clean copy"
   homepage "https://hexscope.org"
@@ -7,28 +7,36 @@ class Hexscope < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/MykytaStel/hexscope/releases/download/v0.7.0/hexscope-0.7.0-aarch64-apple-darwin.tar.gz"
-      sha256 "17b0a43672e6eb2adb25100b2f2d4350e5c05c23f9745d654496f436b3010f3b"
+      url "https://github.com/MykytaStel/hexscope/releases/download/v0.7.1/hexscope-0.7.1-aarch64-apple-darwin.tar.gz"
+      sha256 "ff7d8aea455c3f423f2d748c1c98fda7dfd073b94eddee32ddd97dacbb1f1d9c"
     end
     on_intel do
-      url "https://github.com/MykytaStel/hexscope/releases/download/v0.7.0/hexscope-0.7.0-x86_64-apple-darwin.tar.gz"
-      sha256 "6dd79caa5b19b71bfa097ae79229109e10e3c47f266290d4483c39ee1a179372"
+      url "https://github.com/MykytaStel/hexscope/releases/download/v0.7.1/hexscope-0.7.1-x86_64-apple-darwin.tar.gz"
+      sha256 "f5075076c0f53f19f63d8c6bcace574150d423541e2e00fc29583028c0aeec22"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/MykytaStel/hexscope/releases/download/v0.7.0/hexscope-0.7.0-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "d5289abcf40c6dbbc4b7ebebb6c8b2a0515d6780095dc102cf1e00ba88da2af2"
+      url "https://github.com/MykytaStel/hexscope/releases/download/v0.7.1/hexscope-0.7.1-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "1ed876534acb64d95425452a0549caa492efa0bc2af7f5a04706225293747e99"
     end
     on_intel do
-      url "https://github.com/MykytaStel/hexscope/releases/download/v0.7.0/hexscope-0.7.0-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "8e7eb79738734d4566fc296c670ae35ad14abe6b2d3f6b77413b9b499e551f77"
+      url "https://github.com/MykytaStel/hexscope/releases/download/v0.7.1/hexscope-0.7.1-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "0968fd9ec675b18d3deeabaff060ffa2987db7f9ab43ff790be0e1c5dffffa28"
     end
   end
 
   def install
     bin.install "hexscope"
+  end
+
+  def caveats
+    <<~EOS
+      To clean files from Finder's Quick Actions (or the Scripts menu of
+      GNOME Files), run once:
+        hexscope menu
+    EOS
   end
 
   test do
