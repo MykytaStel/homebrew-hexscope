@@ -31,14 +31,6 @@ class Hexscope < Formula
     bin.install "hexscope"
   end
 
-  def caveats
-    <<~EOS
-      To clean files from Finder's Quick Actions (or the Scripts menu of
-      GNOME Files), run once:
-        hexscope menu
-    EOS
-  end
-
   test do
     assert_match "hexscope #{version}", shell_output("#{bin}/hexscope --version")
   end
