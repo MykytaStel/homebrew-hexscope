@@ -1,5 +1,5 @@
 # Written by scripts/homebrew-formula.mjs in MykytaStel/hexscope from the
-# checksums release v0.7.1 carries. Edit that script, not this file.
+# checksums release v0.7.2 carries. Edit that script, not this file.
 class Hexscope < Formula
   desc "See what a file gives away before you send it, and save a clean copy"
   homepage "https://hexscope.org"
@@ -7,23 +7,23 @@ class Hexscope < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/MykytaStel/hexscope/releases/download/v0.7.1/hexscope-0.7.1-aarch64-apple-darwin.tar.gz"
-      sha256 "ff7d8aea455c3f423f2d748c1c98fda7dfd073b94eddee32ddd97dacbb1f1d9c"
+      url "https://github.com/MykytaStel/hexscope/releases/download/v0.7.2/hexscope-0.7.2-aarch64-apple-darwin.tar.gz"
+      sha256 "e7db4928860c447475be794fe7b3999c9ee64a5fec341ba921b65767a3e19ad7"
     end
     on_intel do
-      url "https://github.com/MykytaStel/hexscope/releases/download/v0.7.1/hexscope-0.7.1-x86_64-apple-darwin.tar.gz"
-      sha256 "f5075076c0f53f19f63d8c6bcace574150d423541e2e00fc29583028c0aeec22"
+      url "https://github.com/MykytaStel/hexscope/releases/download/v0.7.2/hexscope-0.7.2-x86_64-apple-darwin.tar.gz"
+      sha256 "db5ea028843ca20581f6cd791cc581d66098130be5f71dbce1f6ab45fe08f43e"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/MykytaStel/hexscope/releases/download/v0.7.1/hexscope-0.7.1-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "1ed876534acb64d95425452a0549caa492efa0bc2af7f5a04706225293747e99"
+      url "https://github.com/MykytaStel/hexscope/releases/download/v0.7.2/hexscope-0.7.2-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "4bfd375ac3462591685af97c412f395c675e12d4b6644ac1a0730243b6f1baf5"
     end
     on_intel do
-      url "https://github.com/MykytaStel/hexscope/releases/download/v0.7.1/hexscope-0.7.1-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "0968fd9ec675b18d3deeabaff060ffa2987db7f9ab43ff790be0e1c5dffffa28"
+      url "https://github.com/MykytaStel/hexscope/releases/download/v0.7.2/hexscope-0.7.2-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "8b82953b6e42f7cff1f1c63fcf4c7e08aecae1825625ed757a325272d4712771"
     end
   end
 
