@@ -1,5 +1,5 @@
 # Written by scripts/homebrew-formula.mjs in MykytaStel/hexscope from the
-# checksums release v0.16.0 carries. Edit that script, not this file.
+# checksums release v0.17.0 carries. Edit that script, not this file.
 class Hexscope < Formula
   desc "See what a file gives away before you send it, and save a clean copy"
   homepage "https://hexscope.org"
@@ -7,23 +7,23 @@ class Hexscope < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/MykytaStel/hexscope/releases/download/v0.16.0/hexscope-0.16.0-aarch64-apple-darwin.tar.gz"
-      sha256 "260ecc0fd9223735303f020fd8a638c1e2c80ecfe32f8ebb8bfb2c8fd7bf6fee"
+      url "https://github.com/MykytaStel/hexscope/releases/download/v0.17.0/hexscope-0.17.0-aarch64-apple-darwin.tar.gz"
+      sha256 "59929e577abfd14a09fb270e623fc4447233eadf78a64fe9cb90bb0dc58d198a"
     end
     on_intel do
-      url "https://github.com/MykytaStel/hexscope/releases/download/v0.16.0/hexscope-0.16.0-x86_64-apple-darwin.tar.gz"
-      sha256 "e0a7bb8a8760f9dde264611aa8a428eb33be674327ffd59611521ee9dc6779fe"
+      url "https://github.com/MykytaStel/hexscope/releases/download/v0.17.0/hexscope-0.17.0-x86_64-apple-darwin.tar.gz"
+      sha256 "2fa2cea3054106670827cdb3c4d5e02e44f0380db84f7c4035bcf04546ac58df"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/MykytaStel/hexscope/releases/download/v0.16.0/hexscope-0.16.0-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "c20cf990d103fc40a7cb93dea6132db0c4dcf52c7ef7fa56b5666cfc7faf0277"
+      url "https://github.com/MykytaStel/hexscope/releases/download/v0.17.0/hexscope-0.17.0-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "96c195ba83de820a606e0fac135753ab41ad3178766d936e0534e187939e9119"
     end
     on_intel do
-      url "https://github.com/MykytaStel/hexscope/releases/download/v0.16.0/hexscope-0.16.0-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "ca6e98569c6dd3aa3ac594b579abaea80434081726755650dc2b0b141c0bbbf3"
+      url "https://github.com/MykytaStel/hexscope/releases/download/v0.17.0/hexscope-0.17.0-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "59d7dae49aaf856f5611cfb9bb5cc025c5c3cd6f1dc78ee1e8599f8d23090dd4"
     end
   end
 
