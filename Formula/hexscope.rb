@@ -1,5 +1,6 @@
+/Users/mykyta/.rvm/scripts/rvm:29: operation not permitted: ps
 # Written by scripts/homebrew-formula.mjs in MykytaStel/hexscope from the
-# checksums release v0.18.0 carries. Edit that script, not this file.
+# checksums release v0.19.0 carries. Edit that script, not this file.
 class Hexscope < Formula
   desc "See what a file gives away before you send it, and save a clean copy"
   homepage "https://hexscope.org"
@@ -7,23 +8,23 @@ class Hexscope < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/MykytaStel/hexscope/releases/download/v0.18.0/hexscope-0.18.0-aarch64-apple-darwin.tar.gz"
-      sha256 "700ead8197d9bb15f3d6d17eeb6d2e1a05268334a3cb7f87c54207f122837215"
+      url "https://github.com/MykytaStel/hexscope/releases/download/v0.19.0/hexscope-0.19.0-aarch64-apple-darwin.tar.gz"
+      sha256 "673183b0338a713906628a616d6c6a5645cea9128cd79c2ad06efe164c5e2408"
     end
     on_intel do
-      url "https://github.com/MykytaStel/hexscope/releases/download/v0.18.0/hexscope-0.18.0-x86_64-apple-darwin.tar.gz"
-      sha256 "ec8d0bc503d9aef8d92a9781373e11d8cc7cf11ab6efaaa434b803f948e5b970"
+      url "https://github.com/MykytaStel/hexscope/releases/download/v0.19.0/hexscope-0.19.0-x86_64-apple-darwin.tar.gz"
+      sha256 "561ee15abf265a331c1f19b3d3c33ae59d862533e68308e153ad9adba18a208d"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/MykytaStel/hexscope/releases/download/v0.18.0/hexscope-0.18.0-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "a25ebcc0b7864972f2641082579262d9095097dd6bade2179b964aba5a1fe3bb"
+      url "https://github.com/MykytaStel/hexscope/releases/download/v0.19.0/hexscope-0.19.0-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "2cbd7984b9441b93336d24e194067420ba03c5d319775f11c01f79e8e0b6c501"
     end
     on_intel do
-      url "https://github.com/MykytaStel/hexscope/releases/download/v0.18.0/hexscope-0.18.0-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "f41f4f0357e44cd7c43621be59ff606000f96eac61fe488d3934fbd12230248a"
+      url "https://github.com/MykytaStel/hexscope/releases/download/v0.19.0/hexscope-0.19.0-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "c9578699643e7b5f1ea4d329d4dd628ff95f30affe575607e239ff65134a4a84"
     end
   end
 
