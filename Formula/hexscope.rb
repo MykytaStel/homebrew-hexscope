@@ -1,4 +1,3 @@
-/Users/mykyta/.rvm/scripts/rvm:29: operation not permitted: ps
 # Written by scripts/homebrew-formula.mjs in MykytaStel/hexscope from the
 # checksums release v0.19.0 carries. Edit that script, not this file.
 class Hexscope < Formula
